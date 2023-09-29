@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* h1.active{
+color: red;
+  } */
+</style>
+<body>
+  <p id="hello"></p>
+  <p id="him"></p>
+    <div class="hel">
+      <h1>hello</h1>
+      <h1>hello</h1>
+      <h1>hello</h1>
+      <h1>hello</h1>
+      <h1>hello</h1>
+   <table>
+    <thead>
+      <th>id</th>
+      <th>name</th>
+      <th>class</th>
+    </thead>
+    <tbody id="myul">
+      <tr>
+        <td>
+
+        </td>
+      </tr>
+    </tbody>
+   </table>
+  <button class="btn12">Click Here</button>
+</div>
+  <script>
+const text12 = document.querySelectorAll("h1" );
+const btn12 = document.querySelector(".btn12"); 
+btn12.addEventListener("click",()=>{
+  for(var i =0; i<text12.length;i++){
+    text123 = text12[i]
+    text123.style.color="red";
+  }
+  // text12.classList.toggle("active");
+//   text12.forEach(function(h1) {
+//    h1.style.color="red";
+// });
+ 
+})
+
+  </script>
+ <script>
+   const arr = [2,4,4,8,9,0,0];
+function removeDublicate(arr){
+  return arr.filter((value,index)=> arr.indexOf(value)===index)
+
+}
+let text1 = removeDublicate(arr)
+console.log(text1);
+
+document.getElementById("hello").innerHTML=text1;
+
+ </script>
+
+ <script>
+  function myFun(){
+    let a =0;
+      setTimeout(()=>{
+        setInterval(function(){
+      if(a<100){
+        document.getElementById("him").innerHTML =a;
+      }
+      else{
+        a=100;
+        document.getElementById("him").innerHTML = "bas ab nhi hoga";
+      }
+     
+      
+      console.log(a);
+      a++;
+    
+
+    },100)
+      },5000)
+  }
+  myFun();
+ </script>
+ 
+ <script>
+ const obj =[
+  {
+    id:1,name:"shah alam" , class:"10th"
+  },
+  {
+    id:2,name:"mahtab" , class:"12th"
+  },
+  {
+    id:3,name:"imran" , class:"14th"
+  }
+]
+const ulitem = document.getElementById("myul");
+const myName=()=>{
+  obj.map((value)=>{
+    return(
+      ulitem.innerHTML+=`  <tr>
+        <td>${value.id}</td>
+        <td>${value.name}</td>
+        <td>${value.class}</td>
+      </tr> `
+    )
+  });
+  console.log(value)
+}
+myName();
+ </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Bitter', serif;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Manrope', sans-serif;
+        height: 100%;
+        width: 100%;
+    }
+    .page1 {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        padding: 20px;
+        overflow: hidden;
+    }
+    .page2 {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        padding: 0px;
+        /* overflow: hidden; */        
+    }
+
+    .page3 {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(78, 53, 53);
+        overflow-y: hidden;
+    }
+
+    .page1 h1 {
+        color: white;
+        font-weight: 800;
+        font-size: 35vw;
+        font-stretch: 250%;
+        white-space: nowrap;
+        text-transform: uppercase;
+
+
+    }
+
+    .loader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .loader p {
+        font-size: 35px;
+        font-weight: 800;
+    }
+
+    h1 {
+        color: white;
+    }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+         row-gap: 10px;
+        justify-content: center;
+        scroll-behavior: smooth;
+       
+       
+    }
+    .box1{
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        border: 1px solid white;
+        color: white;
+        display: grid;
+        place-items: center;
+      
+       
+    }
+    .box1 p{
+        text-align: center;
+    }
+    .page3{
+        background-color: red;
+        height: 100vh;
+        width: 100%;
+    }
+    .circle{
+        border: 15px solid white;
+        border-radius: 50%;
+        width: 150px;
+         height: 150px;
+         position: relative;
+          border-top: 15px solid red;
+          animation: anime .7s linear infinite;
+    }
+    @keyframes anime{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+   
+</style>
+
+<body>
+    <div class="loader">
+        <!-- <p>0</p> -->
+
+        <div class="circle">
+
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="page1">
+            <h1>We bulid Adidas</h1>
+        </div>
+        <div class="page2">
+            <div class="box">
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+
+
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+                <div class="box1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius accusamus mollitia
+                        quibusdam vitae praesentium! Accusantium tempore libero tempora a!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="page3"></div>
+        <div class="page3"></div>
+        <div class="page3"></div>
+        <div class="page3"></div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        gsap.to(".page1 h1", {
+            transform: "translateX(-220%)",
+            color: "red",
+
+            scrollTrigger: {
+                trigger: ".page1",
+                scroller: "body",
+                start: "top 0",
+                end: "top -200%",
+                scrub: 2,
+                pin: true
+            }
+        })
+    </script>
+     <script>
+        gsap.to(".page2 .box1", {
+            transform: "translateY(-110vh)",          
+            color: "red",
+            fontWeight:"700",
+            scrollTrigger: {
+                trigger: ".page2",
+                scroller: "body",
+                start: "top top",              
+                end: "+=100%",
+                scrub: 2,
+                pin: true,
+                pinSpacing:false,
+                ease:"none",
+            }
+        })
+    </script>
+
+    <script>
+        var tl = gsap.timeline();
+        function time() {
+            var a = 0
+            setInterval(function () {
+
+
+                a++;
+                if (a < 100) {
+                    document.querySelector(".loader p").innerHTML = a + "%"
+                } else {
+                    a = 100
+                    document.querySelector(".loader p").innerHTML = a + "%"
+                }
+
+            }, 50)
+        }
+        tl.to(".loader p", {
+            delay: .5,
+            duration: 3,
+            // onStart: time()
+        })
+
+        tl.to(".loader", {
+            top: "-100vh",
+            delay: .5,
+            duration: 1
+
+        })
+
+    </script>
+    <script>
+
+        function myFun() {
+            var text = document.querySelector(".haed");
+            text.style.color = "red"
+        }
+    </script>
+</body>
+
+</html>

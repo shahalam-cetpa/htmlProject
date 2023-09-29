@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <body style="padding-top:50px">
+       <h3 id="event_demo">0</h3>
+       <input type="button" onclick="myFunction()" value="Click Me" />
+       <input type="reset" onclick="reset()" value="Reset" />
+   </body>
+   
+   <script>
+       function myFunction() {
+           var value = document.getElementById("event_demo").innerHTML
+
+           value = parseInt(value) + 1;
+
+           document.getElementById("event_demo").innerHTML = value;
+       }
+       function reset() {
+           document.getElementById("event_demo").innerHTML = 0;
+       }
+   </script>
+ <form action="/action_page.php" method="get">
+    <label for="browser">Choose your browser from the list:</label>
+    <input list="browsers" name="browser" id="browser">
+    <datalist id="browsers">
+      <option value="Edge">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <input type="submit">
+  </form>
+  <details>
+    <summary>Epcot Center</summary>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+  </details>
+  <embed type="text/html" src="snippet.html"  width="500" height="200">
+    <form oninput = "result.value=parseInt(n1.value)*parseInt(n2.value)">
+        <input type = "number" name = "n1" value = "1" /> *
+        <input type = "number" name = "n2" value = "2" /><br />
+        The output is: <output name = "result"></output>
+   </form>
+   <p>Click "try it" button to get your coordinates.</p>
+   <button onclick="getLocation()">Try It</button>
+   <p id="demo"></p>
+   <script>
+      var x = document.getElementById("demo");
+      
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+          x.innerHTML = "Geolocation functionality is not supported by this browser.";
+        }
+      }
+      
+      function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+      }
+   </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <!-- font family -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- font awsome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- section -->
+    <div class="container">
+        <h1>Benefits you get partnering with us</h1>
+        <div class="inner-container">
+            <div class="icon_section">
+                <i class="fa-solid fa-user-nurse fa1"></i>
+                <h4>Student recruitments</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam odio eos eum itaque quaerat quod
+                    nihil,</p>
+            </div>
+            <div class="icon_section">
+                <i class="fa-solid fa-school fa1"></i>
+                <h4>Access to 500+ top school</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam odio eos eum itaque quaerat quod
+                    nihil,</p>
+            </div>
+            <div class="icon_section">
+                <i class="fa-sharp fa-solid fa-building-columns fa1"></i>
+                <h4>University fare & events</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam odio eos eum itaque quaerat quod
+                    nihil,</p>
+            </div>
+            <div class="icon_section">
+                <i class="fa-regular fa-building fa1"></i>
+                <h4>Bulid brand prasence</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam odio eos eum itaque quaerat quod
+                    nihil,</p>
+            </div>
+            <div class="icon_section">
+                <i class="fa-solid fa-cash-register fa1"></i>
+                <h4>Thoughts leadership webinars</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam odio eos eum itaque quaerat quod
+                    nihil,</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main_section">
+            <div class="first_section">
+                <img src="images/uni.webp" alt="">
+                <div class="second_sect">
+                    <h4>Washington adventist university of atalnta in pacific <br> state of syctactic</h4>
+                    <h6>Sans farnsisco</h6>
+                    <div class="inner_second_sec">
+                        <div class="circle_sec">
+                            <span class="circle"></span>
+                            <h6>1000 in gs</h6>
+                        </div>
+                        <ul class="ul_itms">
+                            <li><i class="fa-solid fa-ticket fa1"></i><span>Admissions</span></li>
+                            <li><i class="fa-regular fa-star fa1"></i><span>rankings</span></li>
+                            <li><i class="fa-solid fa-tv fa1"></i><span>Scholerships</span></li>
+                        </ul>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem distinctio ullam doloremque
+                        quibusdam culpa. Sequi!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem distinctio ullam doloremque
+                        quibusdam culpa. Sequi!l<span id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste adipisci delectus qui, sunt saepe inventore libero cumque esse ipsa, nesciunt quia! Tempora odio et</span>
+                        <button onclick="myFunction()" id="myBtn">Read More</button>
+                    </p>
+
+                </div>
+            </div>
+               <div class="btn_haert_sec">
+                <div class="heart">
+                    <i class="fa-regular fa-heart fa1"></i>
+                </div>
+                <div class="button_section">
+                    <button class="btn_view fa1">View Details</button>
+                    <button class="btn_coures fa1">Explore Courses</button>
+                </div>
+               </div>
+        </div>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" referrerpolicy="no-referrer"></script>
+    <script>
+        function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+    </script>
+<script>
+gsap.from(".fa1",{
+scale:1.1,
+repeat:-1,
+color:"red",
+yoyo:true
+})
+</script>
+</body>
+
+</html>

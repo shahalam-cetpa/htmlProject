@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="inner_container">
+        <div class="tab">
+            <div class="tab_section active" data-id="content1">
+                <button>Home</button>
+            </div>
+            <div class="tab_section" data-id="content2">
+                <button>about</button>
+            </div>
+            <div class="tab_section" data-id="content3">
+                <button>blog</button>
+            </div>
+            <div class="tab_section" data-id="content4">
+                <button>contact</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contextpx active" id="content1">
+                <h5>Home</h5>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ab atque veniam eum sunt praesentium
+                    quos voluptas quibusdam iure exercitationem.
+                </p>
+            </div>
+            <div class="contextpx" id="content2">
+                <h5>About</h5>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ab atque veniam eum sunt praesentium
+                    quos voluptas quibusdam iure exercitationem.
+                    quos voluptas quibusdam iure exercitationem.
+                </p>
+            </div>
+            <div class="contextpx" id="content3">
+                <h5>Blog</h5>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ab atque veniam eum sunt praesentium
+                    quos voluptas quibusdam iure exercitationem.
+                    quos voluptas quibusdam iure exercitationem.
+                     quos voluptas quibusdam iure exercitationem.
+                </p>
+            </div>
+            <div class="contextpx" id="content4">
+                <h5>Contact</h5>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ab atque veniam eum sunt praesentium
+                    quos voluptas quibusdam iure exercitationem.
+                    quos voluptas quibusdam iure exercitationem.
+                    quos voluptas quibusdam iure exercitationem.
+                    quos voluptas quibusdam iure exercitationem.
+                    quos voluptas quibusdam iure exercitationem.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const tabs = document.querySelectorAll(".tab_section");
+        const contents = document.querySelectorAll(".contextpx");
+    
+        tabs.forEach(tab => {
+            tab.addEventListener("click", function() { // Changed to a regular function to refer to 'this'
+                contents.forEach(content => {
+                    content.classList.remove("active");
+                });
+                const contentId = tab.getAttribute("data-id");
+                document.getElementById(contentId).classList.add("active");
+    
+                tabs.forEach(t => {
+                    t.classList.remove("active"); // Remove active class from all tabs
+                });
+                tab.classList.add("active"); // Add active class to the clicked tab
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

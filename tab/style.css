@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.inner_container{
+    width: 1140px;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+ 
+
+}
+.tab{
+    width: 20%;
+  
+}
+.content{
+    width: 73%;
+    padding: 30px;
+}
+.tab_section{
+    border: 1px solid red;
+    margin: 10px 0;
+
+}
+.tab_section button{
+    background-color: unset;
+    color: tomato;
+    width: 150px;
+    display: flex;
+    padding: 6px;
+    margin:6px  auto;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.tab_section.active{
+    background-color: cyan;
+}
+.contextpx{
+    position: absolute;
+    transform: scale(0);
+    opacity: 0;
+}
+.contextpx.active{
+    transform: scale(1);
+    opacity: 1;
+}
+.contextpx p{
+font-size: 18px;
+}
+.contextpx h5{
+    font-size: 25px;
+    font-weight: 700;
+}

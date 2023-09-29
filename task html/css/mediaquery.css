@@ -1,0 +1,17 @@
+@media only screen and (min-width:320px) and (max-width:768px){
+    .container{width: 98%;}
+    .main_section{ flex-direction: column;}
+    .first_section{flex-direction:column ;}
+    .button_section{position: unset;}
+    .second_sect h4{margin-top: 7px;}
+    .first_section img{width: auto; object-fit: cover; height: 300px;}
+    
+}
+@media only screen and (min-width:769px) and (max-width:1024px){
+    .container{width: 98%;}
+}
+@media(max-width:480px){
+    .icon_section p{
+        display: none;
+    }
+}

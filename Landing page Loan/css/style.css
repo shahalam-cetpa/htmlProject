@@ -1,0 +1,74 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+html,body{scroll-behavior: smooth; overflow-x: hidden;font-family: 'Bitter', serif;
+    font-family: 'Lato', sans-serif;}
+    .pd-40{
+        padding: 40px 0px;
+    }
+    .bg-commen{background-color: rgba(0,0,0,.1);}
+    header{
+        background: white;
+      
+       
+    }
+    .header_sec{ display: flex; column-gap: 15px; align-items: center; justify-content: space-between;  height: 70px;}
+    header a{font-size: 30px; text-decoration: none;}
+    header p{font-size: 16px; color: black;}
+    .text-orange{color:  #F7882F;}
+    .hero_section{background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4),rgba(0,0,0,.4)),url("../images/banner1.jpg"); width: 100%;
+    background-repeat: no-repeat; object-fit: cover; background-size: 100% 100%; padding: 40px 0px;}
+    .form_section{background-color:#F7882F ; height: auto; width: auto; padding: 30px;}
+    .form_section .form-control, .form-select{
+        height: 35px;
+        margin-bottom: 8px;
+        border: unset;     
+        
+    }
+    .form_section .form-control:focus{box-shadow: unset;}
+    form_section .form-control::placeholder{
+        color: black;
+    }
+   
+    .hero_one{position: relative; top: 50%; transform: translateY(-50%); width: 100%;}
+    .hero_one h1{font-size: 40px; color: white; text-transform: capitalize; font-weight: 700;}
+    .hero_one h4{font-size: 20px; color: #ffffff80; text-transform: capitalize; font-weight: 400;}
+    .hero_one h3{font-size: 30px; color: #ffffff; text-transform: capitalize; font-weight: 500;}
+    .form_section h2{color: white; text-align: center; font-size: 30px; font-weight: 700;}
+    .form_section p{color: white; text-align: center; font-size: 16px; font-weight: 400;}
+    .btn-cont{background: #00000080; color: white; display: flex; margin: auto; border-radius: 4px; height: 35px;
+    text-align: center; border: 1px solid white; align-items: center;}
+    .btn-cont:hover{color: white;}
+    .approved_sec h3{text-align: center; font-size: 30px; text-transform: capitalize; font-weight: 700;}
+    .approved_sec p{text-align: center;  font-size: 16px; color: black;}
+    .card_sec i{font-size: 100px; display: flex; justify-content: center; transition: all .4s ease-in-out;}
+    .card_sec h4{text-transform: capitalize; font-size: 25px; text-align: center; margin: 20px 0px;}
+    .card_sec p{font-size: 16px; text-align: center; color: black;}
+    .card_sec .card{transition: all .4s ease-in-out;}
+    .card_sec .card:hover{transform: translateY(5px);}
+    .card_sec .card:hover i{color: #F7882F;}
+    .bg-black{background: rgba(0,0,0,.7);}
+    .apply_sec h3{color: white;}
+    .btn-black{background-color: #F7882F; color: white; display: flex; margin: 10px auto; border: 2px solid #F7882F;}
+    .btn-black:hover{background-color: transparent; color: #F7882F;}
+    .modal-content{background-color: #F7882F;}
+    .img_section img{filter: grayscale(100%); transition: all 0.4s ease-in; border: 1px solid #F7882F ;}
+    .img_section{overflow: hidden;}
+    .img_section:hover img{filter: grayscale(0%); transform: scale(1.1); cursor: zoom-in;  }
+    .why_section{position: absolute; top: 50%; transform: translateY(-50%);}
+    .why_section{position: relative;}
+    .why_section h3{font-size: 30px; font-weight: 700; text-transform: capitalize;}
+    .why_section p{font-size: 16px;}
+    /* testimonial section */
+
+    .testimonial-slider {padding: 2em 2em 3em;}
+      .testimonial-title { color: #fff;}
+      .testimonial-title h3 {padding-left: 0.2em; font-size: 30px; text-transform: capitalize;font-weight: 700;}
+      .card {margin: 0 0.5em;box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); border: none; height: 100%;}
+      .carousel-control-prev,
+      .carousel-control-next { background-color: #fff;width: 3em;height: 3em;border-radius: 50%;top: 60%;
+        transform: translateY(-50%);}
+        .footer_sec h3{font-size: 30px;font-weight: 700; text-transform: capitalize;  }
+        .footer_section h3{font-size: 25px; text-transform: capitalize; color: #F7882F; font-weight: 500;}
+        .footer_section p{text-align: justify; font-size: 16px; transition: all .3s ease-in-out;}
+        .footer_section p:hover{color: #F7882F;}
+    
+      

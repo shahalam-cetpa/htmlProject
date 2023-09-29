@@ -1,0 +1,39 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{font-family: 'Bitter', serif; font-family: 'Lato', sans-serif; overflow-x: hidden; scroll-behavior: smooth;
+background-color: rgb(156, 152, 152);}
+.container{max-width: 1140px; margin: 30px auto; background-color: #fff; padding: 30px;
+}
+.container h1{font-size: 30px; color: black;}
+.inner-container{padding: 30px 0px; display: flex; gap: 40px; flex-wrap: wrap;}
+.icon_section{max-width: 300px;}
+.icon_section i{font-size: 25px; color: tomato;}
+.icon_section h4{font-size: 18px; line-height: 40px; transition: all .3s ease-in-out; margin-bottom: 0px;}
+.icon_section p{font-size: 16px; transition: all .3s ease-in-out; color: rgb(87, 84, 84); }
+.icon_section:hover p{color: tomato;}
+.icon_section:hover h4{color: tomato;}
+.main_section{display: flex; justify-content: space-between; }
+.first_section{display: flex; column-gap: 20px;}
+.first_section img{width: 250px; aspect-ratio: 1/1; object-fit: cover;}
+.ul_itms{padding-left: 0px; display: flex; flex-wrap:wrap; gap: 10px;}
+.inner_second_sec{display: flex; column-gap: 20px; align-items: center; flex-wrap: wrap;}
+.ul_itms li{list-style: none; border: 1px solid rgb(87, 84, 84); border-radius: 50px; font-size: 14px;
+text-transform: capitalize; padding: 6px;}
+.ul_itms li span{margin-left: 5px;}
+.ul_itms li i{font-size: 14px;}
+.circle_sec{display: flex; column-gap: 7px; align-items: center;}
+.circle{height: 20px; width: 20px; background-color: gold; border-radius: 50%;}
+.second_sect{max-width: 500px;}
+.second_sect h4{font-size: 18px;}
+ .second_sect #more {display: none; }
+ .second_sect button{background: unset; border: unset; color: blue;}
+.second_sect h6{font-size: 14px; font-weight: 400; color: rgb(87, 84, 84); margin: 7px 0px;}
+.second_sect p{font-size: 16px; color:rgb(87, 84, 84) ; margin-top: 20px;}
+button{width: 150px; height: 40px; font-size: 15px; background-color: unset;}
+.btn_view{border: 1px solid tomato; color: tomato; margin-bottom: 10px; transition: all .3s ease-in-out;}
+.btn_coures{border: 1px solid tomato; background-color: tomato; color: white;
+    transition: all .3s ease-in-out;}
+.btn_view:hover{background-color: tomato; color: white;}
+.btn_coures:hover{background: transparent; color: tomato;}
+.heart i{font-size: 20px; color: rgb(87, 84, 84); display: flex; justify-content: end;}
+.btn_haert_sec{ display: flex; flex-direction: column; position: relative;}
+.button_section{position: absolute;bottom: 0px; right: 0px;}

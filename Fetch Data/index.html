@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    img{
+        width: 200px;
+        height: 200px;
+    }
+</style>
+<body>
+ <table border="1" cellspacing="0" cellpadding="4">
+    <thead>
+        <th>id</th>
+        <th>name</th>
+        <th>username</th>
+        <th>email</th>
+        <th>street</th>
+        <th>suite</th>
+        <th>city</th>
+        <th>zipcode</th>
+    
+
+    </thead>
+    <tbody id="tbody">
+  
+    </tbody>
+ </table> 
+
+
+  <script>
+    const myfun =async() =>{
+        var result = await fetch("https://jsonplaceholder.typicode.com/users",{
+            method:"get",
+            headers: {
+            "Content-Type": "application/json",
+          },
+
+        });
+        
+        console.log(result);
+        var newres = await result.json();
+        console.log(newres);
+        let tabledata ="";
+       newres.map((val,ind)=>{
+             tabledata+=
+                             `
+         <tr>
+    <td>${val.id}</td>
+    <td>${val.name}</td>
+    <td>${val.username}</td>
+    <td>${val.email}</td>
+    <td>${val.address.street}</td>
+    <td>${val.address.suite}</td>
+    <td>${val.address.city}</td>
+    <td>${val.address.zipcode}</td>
+   
+  
+  
+   
+   </tr> 
+                             `
+             
+       })
+
+       document.getElementById("tbody").innerHTML=tabledata
+
+    }
+
+    myfun();
+  </script>
+</body>
+</html>

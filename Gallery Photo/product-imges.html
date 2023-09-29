@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="product">
+   <div class="main-imges">
+<img src="images/1.jpg" alt="">
+   </div>
+   <div class="small-images">
+    <img src="images/1.jpg" alt="">
+    <img src="images/2.jpeg" alt="">
+    <img src="images/3.jpeg" alt="">
+    <img src="images/4.jpeg" alt="">
+    <img src="images/5.jpg" alt="">
+    <img src="images/6.jpg" alt="">
+
+     <img src="images/7.jpg" alt="">
+      <img src="images/8.jpeg" alt="">
+  
+   </div>
+    </div>
+    <script>
+        var mainimg = document.querySelector(".main-imges img");
+        var smallimg = document.querySelectorAll(".small-images img");
+        // first law
+    //    for(let i=0; i<=smallimg.length;i++){
+    //     smallimg[i].addEventListener("click",()=>{
+    //         mainimg.src= smallimg[i].src 
+    //     })
+    //    }
+    //    second law
+        // smallimg.forEach(img=>img.addEventListener("click",()=>{
+        //     mainimg.src=img.src
+        // }))
+
+        smallimg.forEach(img=>{
+            img.addEventListener("click",()=>{
+                mainimg.src=img.src  
+            })
+        })
+
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="Description" content="html,css,javascript">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Product-Details</title>
+   <!-- bootsrap cdn -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/mediaquery.css">
+   <!-- slider cdn -->
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- icon cdn -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+   <!-- top haeder -->
+   <div class="top_nav">
+      <div class="container">
+         <div class="inner_navbar">
+            <p>QUICK BUY! Get up to 25% off on All Stones</p>
+            <img src="images/cancel.png" alt="">
+         </div>
+      </div>
+   </div>
+   <!-- navbar section -->
+   <header>
+      <div class="container">
+         <div class="inner_header">
+            <div class="haeder_logo">
+               <img src="images/logo.png" alt="">
+               <img src="images/logo2.png" alt="">
+            </div>
+            <form class="d-flex form_section" role="search">
+               <button class="btn" type="submit"><i class="bi bi-geo-alt-fill"></i> <span>Deliver to
+                     110567</span></button>
+               <input class="form-control me-2" type="search" placeholder="Search for medication & Wellness products.."
+                  aria-label="Search">
+               <i class="bi bi-search"></i>
+            </form>
+            <div class="sign_section">
+               <img src="images/cart.svg" alt="">
+               <div>
+                  <img src="images/Group 5.svg" alt="">
+                  <a href="#">Sign in</a>/ <a href="#">Sign Up</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- navbar 2 -->
+   <nav class="navbar navbar-expand-lg navbar-light nav_section sticky_top">
+      <div class="container">
+         <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""> <img src="images/logo2.png" alt=""></a>
+         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbar-content">
+            <div class="hamburger-toggle">
+               <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+            </div>
+         </button>
+         <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                     data-bs-auto-close="outside">Products</a>
+                  <ul class="dropdown-menu">
+                     <li class="dropend">
+                        <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                           data-bs-auto-close="outside">Dhoop Cones</a>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href=""> Jar Cones </a></li>
+                           <li><a class="dropdown-item" href=""> Chandan Bamboo Dhoop</a></li>
+                           <li><a class="dropdown-item" href=""> Backflow Cone Dhoop</a></li>
+                           <li><a class="dropdown-item" href="">Buddha Red Incense Cone</a></li>
+                           <li><a class="dropdown-item" href=""> ountain Sandal Dhoop </a></li>
+                           <li><a class="dropdown-item" href=""> Cone Sandal Dhoop</a></li>
+                        </ul>
+                     </li>
+                     <li><a class="dropdown-item" href="#">Incense Holders</a></li>
+                     <li><a class="dropdown-item" href="#">Yantras</a></li>
+                     <li><a class="dropdown-item" href="#">Incense Sticks</a></li>
+                     <li><a class="dropdown-item" href="#">Pooja Thali Sets</a></li>
+                     <li><a class="dropdown-item" href="#">Shankh</a></li>
+                     <li><a class="dropdown-item" href="#">Kalash</a></li>
+                     <li><a class="dropdown-item" href="#">Book Restss</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                     data-bs-auto-close="outside">Services</a>
+                  <ul class="dropdown-menu shadow">
+                     <li class="dropend">
+                        <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                           data-bs-auto-close="outside">Dhoop Cones</a>
+                        <ul class="dropdown-menu shadow">
+                           <li><a class="dropdown-item" href=""> Jar Cones </a></li>
+                           <li><a class="dropdown-item" href=""> Chandan Bamboo Dhoop</a></li>
+                           <li><a class="dropdown-item" href=""> Backflow Cone Dhoop</a></li>
+                           <li><a class="dropdown-item" href="">Buddha Red Incense Cone</a></li>
+                           <li><a class="dropdown-item" href=""> ountain Sandal Dhoop </a></li>
+                           <li><a class="dropdown-item" href=""> Cone Sandal Dhoop</a></li>
+                        </ul>
+                     </li>
+                     <li><a class="dropdown-item" href="#">Incense Holders</a></li>
+                     <li><a class="dropdown-item" href="#">Yantras</a></li>
+                     <li><a class="dropdown-item" href="#">Incense Sticks</a></li>
+                     <li><a class="dropdown-item" href="#">Pooja Thali Sets</a></li>
+                     <li><a class="dropdown-item" href="#">Shankh</a></li>
+                     <li><a class="dropdown-item" href="#">Kalash</a></li>
+                     <li><a class="dropdown-item" href="#">Book Restss</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Courses</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Blogs</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Videos</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <!-- 
+         braedrcrums -->
+   <div class="container  breadcrum_section">
+      <ul>
+         <li><a href="#">Product</a></li>
+         <i class="bi bi-chevron-right"></i>
+         <li><a href="#"> Dhoop Cones</a></li>
+         <i class="bi bi-chevron-right"></i>
+         <li><a href="#"> Jar Cones</a></li>
+      </ul>
+   </div>
+   <!-- product details section -->
+   <div class="container pd-80">
+      <div class="product-details-section">
+         <div class="mainimages_section">
+            <div class="small-img-section">
+               <div class="small-img">
+                  <img src="images/small1.png" class="small-img-click" alt="">
+               </div>
+               <div class="small-img">
+                  <img src="images/small2.png" class="small-img-click" alt="">
+               </div>
+               <div class="small-img">
+                  <img src="images/small3.png" class="small-img-click" alt="">
+               </div>
+               <div class="small-img">
+                  <img src="images/small4.png" class="small-img-click" alt="">
+               </div>
+            </div>
+            <div class="large-img">
+               <img src="images/large.png" alt="" id="large-img-click">
+            </div>
+         </div>
+         <div class="product-details-img">
+            <h6><span>Brand:</span> Rashmi Divine Solutions</h6>
+            <h6><span>Scent:</span> Floral</h6>
+            <h6><span>Availability:</span>Only 2 in Stock</h6>
+            <div class="heading-section">
+               <h4>Lavender Dhoop Cone Sticks Pack of 100-Piece/Jar by Rashmi Divine</h4>
+               <ul class="star_items">
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+               </ul>
+               <ul class="ul_para">
+                  <li>
+                     Lavender Dhoop sticks activate your senses and relax the nerves,
+                     making you less anxious. They also hold the power to cleanse the air.
+                  </li>
+                  <li>
+                     Lavender Crafted out of the finest quality ingredients, this leaves a magnificent
+                     and alluring fragrance and adds more to your ‘spiritual time
+                  <li>
+                     Lavender Dhoop sticks are Charcoal Free Dhoop Sticks with soothing
+                     fragrances which don't cause eye irritation and headache
+                  </li>
+               </ul>
+               <hr>
+               <div class="bottom-details">
+                  <h6>USD(incl. of all taxes)</h6>
+                  <div class="rupay_section">
+                     <h4>$4.05</h4>
+                     <h4 class="margin_rupay">$8.00</h4>
+                  </div>
+                  <div class="addto_cart">
+                     <div class="increament">
+                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                           <button type="button" class="btn">-</button>
+                           <div class="inc_sec">1</div>
+                           <button type="button" class="btn">+</button>
+                        </div>
+                     </div>
+                     <div class="btn_gruop">
+                        <button class="btn_now">
+                           Buy Now
+                        </button>
+                        <button class="btn_cart">
+                           Add to Cart
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- information_section -->
+   <div class="container">
+      <div class="information_section">
+         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+               <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
+            </li>
+            <li class="nav-item" role="presentation">
+               <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Product
+                  Information</button>
+            </li>
+            <li class="nav-item" role="presentation">
+               <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                  type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews</button>
+            </li>
+         </ul>
+         <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+               <p>
+                  Dhoop incence cone made from natual hurbs and scented.Long
+                  lasting enthralling dhoop batti for regular use - encouraging and cheering dhoop incense cones. Use
+                  dhoop bati for offering your prayers or while meditating or relaxing. It will unquestionably boost up
+                  your confidence, create encouraging environment and purify the atmosphere while spreading the
+                  lingering aroma all around. Use it every morning while doing prayers, while meditating or exercising.
+                  It's one of the best incense cones that spread mesmerizing fragrance all around. Simply relax and have
+                  the time of your lives by getting these incense cones. can we use for spiritual and meditation
+                  purpose. Its great fragrance and long lasting effect. Its heavenly aroma encourages your soul and
+                  thoughts to be pure and beautiful. For uplifting and purifying the ambience.
+               </p>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+               <p>
+                  Dhoop incence cone made from natual hurbs and scented.Long
+                  lasting enthralling dhoop batti for regular use - encouraging and cheering dhoop incense cones. Use
+                  dhoop bati for offering your prayers or while meditating or relaxing. It will unquestionably boost up
+                  your confidence, create encouraging environment and purify the atmosphere while spreading the
+                  lingering aroma all around. Use it every morning while doing prayers, while meditating or exercising.
+                  It's one of the best incense cones that spread mesmerizing fragrance all around. Simply relax and have
+                  the time of your lives by getting these incense cones. can we use for spiritual and meditation
+                  purpose. Its great fragrance and long lasting effect. Its heavenly aroma encourages your soul and
+                  thoughts to be pure and beautiful. For uplifting and purifying the ambience.
+               </p>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+               <p>
+                  Dhoop incence cone made from natual hurbs and scented.Long
+                  lasting enthralling dhoop batti for regular use - encouraging and cheering dhoop incense cones. Use
+                  dhoop bati for offering your prayers or while meditating or relaxing. It will unquestionably boost up
+                  your confidence, create encouraging environment and purify the atmosphere while spreading the
+                  lingering aroma all around. Use it every morning while doing prayers, while meditating or exercising.
+                  It's one of the best incense cones that spread mesmerizing fragrance all around. Simply relax and have
+                  the time of your lives by getting these incense cones. can we use for spiritual and meditation
+                  purpose. Its great fragrance and long lasting effect. Its heavenly aroma encourages your soul and
+                  thoughts to be pure and beautiful. For uplifting and purifying the ambience.
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- related product -->
+   <section class="owl_arrow_section">
+      <div class="container">
+         <div class="related_product_section  pd-80">
+            <h3 class="text-center">Related Products</h3>
+            <div class="owl-carousel owl-theme pd-80">
+               <div class="item">
+                  <div class="card">
+                     <div class="header_section">
+                        <div class="header_section_inner">
+                           <button class="btn">New</button>
+                           <div class="haert_icon">
+                              <i class="bi bi-heart-fill"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <img src="images/slide1.png" alt="" class="img-fluid">
+                     <div class="bottom_section">
+                        <button><i class="bi bi-cart2"></i> Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="footer_section_card">
+                     <h4>Musk INCENSE CONES</h4>
+                     <h5>$0.75 <span>$2.66</span></h5>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="card">
+                     <div class="header_section">
+                        <div class="header_section_inner second_card">
+                           <button class="btn">-10%</button>
+                           <div class="haert_icon">
+                              <i class="bi bi-heart-fill"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <img src="images/slide2.png" alt="" class="img-fluid">
+                     <div class="bottom_section">
+                        <button><i class="bi bi-cart2"></i> Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="footer_section_card">
+                     <h4>Musk INCENSE CONES</h4>
+                     <h5>$0.75 <span>$2.66</span></h5>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="card">
+                     <div class="header_section">
+                        <div class="header_section_inner second_card third_card">
+                           <button class="btn">HOT</button>
+                           <div class="haert_icon">
+                              <i class="bi bi-heart-fill"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <img src="images/slide3.png" alt="" class="img-fluid">
+                     <div class="bottom_section">
+                        <button><i class="bi bi-cart2"></i> Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="footer_section_card">
+                     <h4>Musk INCENSE CONES</h4>
+                     <h5>$0.75 <span>$2.66</span></h5>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="card">
+                     <div class="header_section">
+                        <div class="header_section_inner second_card fourth_card">
+                           <button class="btn">NEW</button>
+                           <div class="haert_icon">
+                              <i class="bi bi-heart-fill"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <img src="images/slide4.png" alt="" class="img-fluid">
+                     <div class="bottom_section btn_second">
+                        <button><i class="bi bi-cart2"></i> Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="footer_section_card">
+                     <h4>Musk INCENSE CONES</h4>
+                     <h5>$0.75 <span>$2.66</span></h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- footer section -->
+   <footer>
+      <div class="footer_section">
+         <div class="container pd-80">
+            <div class="row">
+               <div class="col-lg-4">
+                  <ul>
+                     <li> <i class="bi bi-envelope"></i> <span>Sign Up To Shop Now</span></li>
+                  </ul>
+               </div>
+               <div class="col-lg-6 offset-md-2">
+                  <form class="d-flex" role="search">
+                     <input class="form-control me-2" type="search" placeholder="Enter your email" aria-label="Search">
+                     <button class="btn " type="submit">Subscribe</button>
+                  </form>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="ul_items">
+                     <h6>Contact Us</h6>
+                     <ul>
+                        <li class="mb-2"><a href="#">Demo Store</a></li>
+                        <li class="mb-2"><a href="#">No. 1258 Utawala, Nairobi, 01010</a></li>
+                        <li class="mb-2"><a href="#">Kenya</a></li>
+                        <li class="mb-2"><a href="#">+25470101010</a></li>
+                        <li class="mb-2"><a href="#">example@gmail.com</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2  col-md-6">
+                  <div class="ul_items">
+                     <h6>Information</h6>
+                     <ul>
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#">Refund Policy</a></li>
+                        <li class="mb-2"><a href="#">Shipping Policy</a></li>
+                        <li class="mb-2"><a href="#">Terms Of Service</a></li>
+                        <li class="mb-2"><a href="#">Blogs</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2  col-md-6">
+                  <div class="ul_items">
+                     <h6>Account</h6>
+                     <ul>
+                        <li class="mb-2"><a href="#">Search</a></li>
+                        <li class="mb-2"><a href="#">About Us</a></li>
+                        <li class="mb-2"><a href="#">Faq</a></li>
+                        <li class="mb-2"><a href="#">Contact</a></li>
+                        <li class="mb-2"><a href="#">Help</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2  col-md-6">
+                  <div class="ul_items">
+                     <h6>Quick Links</h6>
+                     <ul>
+                        <li class="mb-2"><a href="#">Incense Sticks</a></li>
+                        <li class="mb-2"><a href="#">Shankh</a></li>
+                        <li class="mb-2"><a href="#">Kalash</a></li>
+                        <li class="mb-2"><a href="#">Incense Holders</a></li>
+                        <li class="mb-2"><a href="#">Cone Dhoop</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="ul_items">
+                     <h6>Social Media.</h6>
+                     <ul>
+                        <li>Follow us on social media and stay updated.</li>
+                     </ul>
+                     <ul class="icon_list">
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-camera"></i></a></li>
+                        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <script src="js/index.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+   <script>
+      var LargeImg = document.getElementById("large-img-click");
+      var SmallImg = document.getElementsByClassName("small-img-click");
+      SmallImg[0].onclick = function () {
+         LargeImg.src = SmallImg[0].src
+      }
+      SmallImg[1].onclick = function () {
+         LargeImg.src = SmallImg[1].src
+      }
+      SmallImg[2].onclick = function () {
+         LargeImg.src = SmallImg[2].src
+      }
+      SmallImg[3].onclick = function () {
+         LargeImg.src = SmallImg[3].src
+      }
+
+   </script>
+   <script>
+      $('.owl-carousel').owlCarousel({
+         loop: true,
+         margin: 10,
+         autoplay: true,
+         autoplayTimeout: 3000,
+
+         nav: true,
+         responsive: {
+            0: {
+               items: 1
+            },
+            600: {
+               items: 3
+            },
+            1000: {
+               items: 4
+            }
+         }
+      })
+   </script>
+   <script>
+      window.addEventListener("scroll", () => {
+         const navbar = document.querySelector(".navbar");
+         navbar.classList.toggle("sticky_top", window.scrollY > 200)
+      })
+   </script>
+</body>
+
+</html>

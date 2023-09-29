@@ -1,0 +1,48 @@
+  
+      @media (min-width: 576px) {
+        .carousel-item {
+          margin-right: 0;
+          flex: 0 0 50%;
+          display: block;
+        }
+        .carousel-inner {
+          display: flex;
+        }
+      }
+      @media (min-width: 768px) {
+        .carousel-inner {
+          padding: 1em;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+          opacity: 1;
+          position: absolute;
+          left: 1em;
+          top: 90%;
+          transform: translateY(-50%);
+        }
+        .carousel-control-next {
+          left: 5em;
+        }
+      }
+
+      @media only screen and (min-width:320px) and (max-width:768px){
+        .hero_one{width:100% !important;}
+        .header_sec{display: block; height: 100px;}
+        .brand {display: flex; justify-content: center;}
+        .header_sec p{text-align: center;}
+        .hero_one h1{font-size: 23px;}
+        .hero_one{align-items: flex-start;;}
+        .hero_one h3{font-size: 18px;}
+        .hero_one h4{font-size: 16px;}
+       .card_sec .mt4{margin-bottom: 10px;}
+       .card_sec .card{margin: 10px 0;}
+       .approved_sec h3{font-size: 21px;}
+       .card_sec h4{font-size: 20px;}
+       .why_section h3{font-size: 21px;}
+       .reverce_mobile{display: flex; flex-direction: column-reverse;}
+       .testimonial-slider {padding: 2em 0em 3em;}
+       .testimonial-title h3{font-size: 21px;}
+      .modal-content .form_section{padding: unset;}
+      }
+      @media only screen and (min-width:1023px) and (max-width:)

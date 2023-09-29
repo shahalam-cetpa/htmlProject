@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.main_div{
+    max-width: 1120px;
+    max-height: 600px;
+    border: 1px solid red;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}  
+.div1{
+    background-color: red;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    margin: 10px auto;
+    
+}  
+.div1:nth-child(odd){
+    background-color: green;
+    scroll-snap-align: center;
+}
+</style>
+<body>
+   <div class="main_div">
+    <div class="div1">
+
+    </div>
+    <div class="div1">
+
+    </div>
+    <div class="div1">
+
+    </div>
+    <div class="div1">
+
+    </div>
+    <div class="div1">
+
+    </div>
+    <div class="div1">
+
+    </div>
+    
+   </div> 
+</body>
+</html>

@@ -1,0 +1,167 @@
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    position: relative;
+  }
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+  }
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+  }
+  .dropdown-menu > li:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .container {
+    width: 95% !important;
+  }
+  .navbar-brand {
+    display: block;
+  }
+  .inner_header {
+    flex-direction: column;
+    height: auto;
+    margin-top: 7px;
+  }
+  .pd-80 {
+    padding: 10px 0px;
+  }
+  .inner_header .haeder_logo {
+    margin-bottom: 7px;
+    display: none;
+  }
+  .sign_section {
+    margin-top: 7px;
+  }
+
+  .inner_crousel {
+    flex-direction: column;
+  }
+  .outer_craasel {
+    padding: 10px 10px;
+  }
+  .inner_navbar p {
+    font-weight: 400;
+    text-align: left;
+    font-size: 12px;
+  }
+  .heading1 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .heading2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .card_section .card {
+    display: flex;
+    margin: 5px auto;
+  }
+  .flamingo_section {
+    flex-direction: column;
+    padding: 0px 0px;
+  }
+  .inner_header .form-control {
+    font-size: 13px;
+    width: unset;
+  }
+  .footer_section .ul_items {
+    margin-top: 7px;
+  }
+  .footer_section::after {
+    display: none;
+  }
+  .heading4 {
+    text-align: center;
+  }
+  .product_section .card {
+    display: flex; 
+    margin: 5px auto;
+  }
+  .product-details-section {
+    flex-direction: column;
+  }
+  .bottom-details {
+    position: unset;
+  }
+  .addto_cart {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn_gruop {
+    margin-top: 10px;
+  }
+  .related_product_section .card {
+    display: flex;
+    margin: auto;
+  }
+  .large-img {
+    width: auto;
+    height: auto;
+  }
+  .product-details-img {
+    margin-top: 10px;
+  }
+  .mainimages_section {
+    flex-direction: column-reverse;
+  }
+  .small-img-section {
+    flex-direction: row;
+    margin-top: 10px;
+    row-gap: 20px;
+  }
+  .small-img {
+    width: 120px;
+    margin: 0 2px;
+  }
+  .breadcrum_section ul li a {
+    font-size: 12px;
+    text-decoration: none;
+  }
+}
+@media (min-width: 768px) {
+  .small-img-section {
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+  .inner_header .form-control {
+    width: 400px;
+  }
+  .product_section .card {
+    margin: auto;
+  }
+  .large-img {
+    width: 310px;
+  }
+  .flamingo_section {
+    padding: 0px 25px;
+  }
+  .blog_section .card {
+    width: auto;
+  }
+  .heading1 {
+    font-size: 40px;
+  }
+}
