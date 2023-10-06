@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="website for task">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+       <meta name="author" content="shah alam">
+      <title>Homepage</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/mediaquery.css">
+      <!-- font cdn link -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Manrope:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+         rel="stylesheet">
+      <!-- font awasome link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+   <body>
+      <div class="container">
+         <div class="first_section">
+            <h1 class="heading1">661 holydays found</h1>
+            <form class="search_section">
+               <input type="text" placeholder="Search.." name="search" class="serch_bar">
+               <button type="submit" ><i class="fa fa-search"></i></button>
+            </form>
+            <form class="dropdown">
+               <label>Sort By</label>
+               <select name="most relevant">
+                  <option value="most relevant">most relevant:</option>
+                  <option value="choose1">choose1</option>
+               </select>
+            </form>
+         </div>
+         <!-- second section -->
+         <div class="second_section">
+            <div class="left_section">
+               <div class="btn_section">
+                  <button class="price active">Price per person</button>
+                  <button class="total">total price</button>
+               </div>
+               <div class="show_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d14008.181997664748!2d77.36199200584852!3d28.62839841066851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d28.6260722!2d77.366896!4m5!1s0x390cef62bda4726d%3A0x4ff4390223f1898a!2sEaseMyTrip%2C%20H-173%2C%20Sector%2063%20Rd%2C%20Noida%2C%20Uttar%20Pradesh%20201301!3m2!1d28.6270971!2d77.3797922!5e0!3m2!1sen!2sin!4v1692362427793!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
+               <div class="filter_section">
+                  <button>Filter</button>
+                  <button class="reset">Reset</button>
+               </div>
+               <div class="main_filter">
+                  <div class="head">
+                     <h6>Price</h6>
+                     <i class="fa-solid fa-chevron-up"></i>
+                  </div>
+                  <div class="budget">
+                     <p>set your own budget</p>
+                     <label class="switch">
+                     <input type="checkbox" checked>
+                     <span class="slider round"></span>
+                     </label>
+                  </div>
+                  <div class="range">
+                     <form>
+                        <input type="range" id="vol" name="vol" min="0" max="100" class="range-sec">
+                     </form>
+                     <div class="range-radar">
+                        <p>₹1250</p>
+                        <p>₹1950</p>
+                     </div>
+                     <div class="input_checkbox">
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">₹0 - ₹5000 </label>
+                           </form>
+                           <p>1241</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon" checked>
+                              <label for="city">₹5000 - ₹10000 </label>
+                           </form>
+                           <p>1241</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">₹10000 - ₹5000 </label>
+                           </form>
+                           <p>1241</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">₹7000 - ₹9000 </label>
+                           </form>
+                           <p>1241</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">₹9000 - ₹12000 </label>
+                           </form>
+                           <p>1241</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main_filter">
+                  <div class="head">
+                     <h6>Star Rating</h6>
+                     <i class="fa-solid fa-chevron-up"></i>
+                  </div>
+                  <div class="range">
+                     <div class="input_checkbox">
+                        <div class="inner_checkbox">
+                           <div class="form_flex">
+                              <form action="form_flex">
+                                 <input type="checkbox" id="" name="" value="" class="largeicon">
+                              </form>
+                              <div class="star-rating">
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="inner_checkbox">
+                           <div class="form_flex">
+                              <form action="form_flex">
+                                 <input type="checkbox" id="" name="" value="" class="largeicon">
+                              </form>
+                              <div class="star-rating">
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star  text-brown"></i>
+                              </div>
+                              <p>(4 star and up)</p>
+                           </div>
+                        </div>
+                        <div class="inner_checkbox">
+                           <div class="form_flex">
+                              <form action="form_flex">
+                                 <input type="checkbox" id="" name="" value="" class="largeicon" checked>
+                              </form>
+                              <div class="star-rating">
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-brown"></i>
+                                 <i class="fa-solid fa-star text-brown"></i>
+                                 <i class="fa-solid fa-star  text-brown"></i>
+                              </div>
+                              <p>(3 star and up)</p>
+                           </div>
+                        </div>
+                        <div class="inner_checkbox">
+                           <div class="form_flex">
+                              <form action="form_flex">
+                                 <input type="checkbox" id="" name="" value="" class="largeicon">
+                              </form>
+                              <div class="star-rating">
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-brown"></i>
+                                 <i class="fa-solid fa-star  text-brown"></i>
+                              </div>
+                              <p>(2 star and up)</p>
+                           </div>
+                        </div>
+                        <div class="inner_checkbox">
+                           <div class="form_flex">
+                              <form action="form_flex">
+                                 <input type="checkbox" id="" name="" value="" class="largeicon">
+                              </form>
+                              <div class="star-rating">
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-brown"></i>
+                                 <i class="fa-solid fa-star text-brown"></i>
+                                 <i class="fa-solid fa-star text-brown"></i>
+                                 <i class="fa-solid fa-star  text-brown"></i>
+                              </div>
+                              <p>(1 star and up)</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main_filter">
+                  <div class="head">
+                     <h6>Top Adviser</h6>
+                     <i class="fa-solid fa-chevron-up"></i>
+                  </div>
+                  <div class="range">
+                     <div class="input_checkbox">
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">Any </label>
+                           </form>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">5</label>
+                           </form>
+                           <p>30</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">4 And Above</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">3 And Above</label>
+                           </form>
+                           <p>429</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">2 And Above</label>
+                           </form>
+                           <p>600</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">1 And Above</label>
+                           </form>
+                           <p>205</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main_filter min_height">
+                  <div class="head">
+                     <h6>Area Attraction</h6>
+                     <i class="fa-solid fa-chevron-up"></i>
+                  </div>
+                  <div class="range">
+                     <div class="input_checkbox">
+                        <div class="inner_checkbox">
+                           <form action="form_grid">
+                              <input type="checkbox" id="" name="" class="largeicon">
+                              <label for="city">Tanach lot</label>
+                           </form>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" class="largeicon">
+                              <label for="city">bali blast moment</label>
+                           </form>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">ullu temple</label>
+                           </form>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">bali meuseum</label>
+                           </form>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon" checked>
+                              <label for="city">monkey forest</label>
+                           </form>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">bail swing</label>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main_filter min_height">
+                  <div class="head">
+                     <h6>Room facilities</h6>
+                     <i class="fa-solid fa-chevron-up"></i>
+                  </div>
+                  <div class="range">
+                     <div class="input_checkbox">
+                        <div class="inner_checkbox">
+                           <form action="form_grid">
+                              <input type="checkbox" id="" name="" class="largeicon">
+                              <label for="city">Private pul</label>
+                           </form>
+                           <p>205</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" class="largeicon">
+                              <label for="city">See View</label>
+                           </form>
+                           <p>205</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon" checked>
+                              <label for="city">Air Conditiing</label>
+                           </form>
+                           <p>205</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">private Condtion</label>
+                           </form>
+                           <p>205</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">private bathroom</label>
+                           </form>
+                           <p>205</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">sap</label>
+                           </form>
+                           <p>205</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main_filter min_height">
+                  <div class="head">
+                     <h6>City</h6>
+                     <i class="fa-solid fa-chevron-up"></i>
+                  </div>
+                  <div class="range">
+                     <div class="input_checkbox">
+                        <div class="inner_checkbox">
+                           <form action="form_grid">
+                              <input type="checkbox" id="" name="" class="largeicon">
+                              <label for="city">Semivinayak</label>
+                           </form>
+                           <p>205</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" class="largeicon" checked>
+                              <label for="city">ubud</label>
+                           </form>
+                           <p>205</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">congua</label>
+                           </form>
+                           <p>205</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">kuta</label>
+                           </form>
+                           <p>205</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">nusa dua</label>
+                           </form>
+                           <p>205</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">bail swing</label>
+                           </form>
+                           <p>205</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main_filter min_height">
+                  <div class="head">
+                     <h6>Animities</h6>
+                     <i class="fa-solid fa-chevron-up"></i>
+                  </div>
+                  <div class="range">
+                     <div class="input_checkbox">
+                        <div class="inner_checkbox">
+                           <form action="form_grid">
+                              <input type="checkbox" id="" name="" class="largeicon">
+                              <label for="city">Fee Cancellation</label>
+                           </form>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" class="largeicon">
+                              <label for="city">24 Hours Frondesl</label>
+                           </form>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">AC</label>
+                           </form>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">Bar</label>
+                           </form>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">Wifi</label>
+                           </form>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">Breakfast</label>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main_filter">
+                  <div class="head">
+                     <h6>Holiday Type</h6>
+                     <i class="fa-solid fa-chevron-up"></i>
+                  </div>
+                  <div class="range">
+                     <div class="input_checkbox">
+                        <div class="inner_checkbox">
+                           <form action="form_grid">
+                              <input type="checkbox" id="" name="" class="largeicon">
+                              <label for="city">Adult only hotal</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" class="largeicon" checked>
+                              <label for="city">beach</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">close to airport</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">couples</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">family</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">honeymoon</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">luxary hotal</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">spa and relaxation</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main_filter">
+                  <div class="head">
+                     <h6>Pool</h6>
+                     <i class="fa-solid fa-chevron-up"></i>
+                  </div>
+                  <div class="range">
+                     <div class="input_checkbox">
+                        <div class="inner_checkbox">
+                           <form action="form_grid">
+                              <input type="checkbox" id="" name="" class="largeicon">
+                              <label for="city">indoor pool</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" class="largeicon" checked>
+                              <label for="city">infinity pool</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">kids pool</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">outdoor pool</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">pool bar</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">swimming pool</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                        <div class="inner_checkbox">
+                           <form action="">
+                              <input type="checkbox" id="" name="" value="" class="largeicon">
+                              <label for="city">family pool</label>
+                           </form>
+                           <p>545</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="right_section">
+               <div class="inner_right">
+                  <div class="images_section">
+                     <div class="img_sec slider-container" id="slider1">
+                        <div class="mySlides1  fade">
+                           <div class="numbertext">1 / 3</div>
+                           <img src="images/slide1.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides1 fade">
+                           <div class="numbertext">2 / 3</div>
+                           <img src="images/slide2.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides1 fade">
+                           <div class="numbertext">3 / 3</div>
+                           <img src="images/slide3.jpg" style="width:100%">
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+                     </div>
+                     <div class="hotal_section">
+                        <div>
+                           <div class="hotal-star">
+                              <h6>Hotal</h6>
+                              <div class="star-rating">
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                              </div>
+                           </div>
+                           <div class="hotal_text">
+                              <h4>Bhuwana ubud hotal and faming </h4>
+                              <p>kekantanam ubud bali, indonasia</p>
+                              <div class="review_section">
+                                 <div class="review">
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                 </div>
+                                 <p>530 Reviews</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="hotal_bottom">
+                           <p><i class="fa-solid fa-fire"></i> Hurry Up! only few room are left</p>
+                           <div class="date">
+                              <div class="inner_date">
+                                 <input type="date" class="datetime">
+                                 <h6>(4 Nights)</h6>
+                              </div>
+                              <select name="" id="">
+                                 <option value="volvo" selected><i class="fa-solid fa-plane-departure"></i>4 flight Included</option>
+                                 <option value="1">4 flight Included</option>
+                                 <option value="2">4 flight Included</option>
+                                 <option value="3">4 flight Included</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text_section">
+                     <p class="free_off">20% Off</p>
+                     <h6>₹95000</h6>
+                     <h3>₹85000</h3>
+                     <p class="per_person">Per Person</p>
+                     <div class="btn_section_last">
+                        <button class="btn1_details">View Details</button>
+                        <button class="btn1_price">Hotal View</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="bottom_section">
+                  <div class="bottom_inner">
+                     <p><i class="fa-solid fa-truck-monster"></i>Exclusive offer- HDFC bank credit user get INR 565 off</p>
+                  </div>
+                  <div class="inner_right">
+                     <div class="images_section">
+                        <div class="img_sec slider-container" id="slider2">
+                           <div class="mySlides2 fade">
+                              <div class="numbertext">1 / 3</div>
+                              <img src="images/slide1.jpg" style="width:100%">
+                           </div>
+                           <div class="mySlides2 fade">
+                              <div class="numbertext">2 / 3</div>
+                              <img src="images/slide2.jpg" style="width:100%">
+                           </div>
+                           <div class="mySlides2 fade">
+                              <div class="numbertext">3 / 3</div>
+                              <img src="images/slide3.jpg" style="width:100%">
+                           </div>
+                           <!-- Next and previous buttons -->
+                           <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                           <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                        </div>
+                        <div class="hotal_section">
+                           <div>
+                              <div class="hotal-star">
+                                 <h6>Hotal</h6>
+                                 <div class="star-rating">
+                                    <i class="fa-solid fa-star text-gold"></i>
+                                    <i class="fa-solid fa-star text-gold"></i>
+                                    <i class="fa-solid fa-star text-gold"></i>
+                                    <i class="fa-solid fa-star text-gold"></i>
+                                    <i class="fa-solid fa-star text-gold"></i>
+                                 </div>
+                              </div>
+                              <div class="hotal_text">
+                                 <h4>Bhuwana ubud hotal and faming </h4>
+                                 <p>kekantanam ubud bali, indonasia</p>
+                                 <div class="review_section">
+                                    <div class="review">
+                                       <i class="fa-regular fa-circle-dot"></i>
+                                       <i class="fa-regular fa-circle-dot"></i>
+                                       <i class="fa-regular fa-circle-dot"></i>
+                                       <i class="fa-regular fa-circle-dot"></i>
+                                       <i class="fa-regular fa-circle-dot"></i>
+                                    </div>
+                                    <p>530 Reviews</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="hotal_bottom">
+                              <p><i class="fa-solid fa-fire"></i> Hurry Up! only few room are left</p>
+                              <div class="date">
+                                 <div class="inner_date">
+                                    <input type="date" class="datetime">
+                                    <h6>(4 Nights)</h6>
+                                 </div>
+                                 <select name="" id="">
+                                    <option value="volvo" selected><i class="fa-solid fa-plane-departure"></i>4 flight Included</option>
+                                    <option value="1">4 flight Included</option>
+                                    <option value="2">4 flight Included</option>
+                                    <option value="3">4 flight Included</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="text_section">
+                        <p class="free_off">20% Off</p>
+                        <h6>₹95000</h6>
+                        <h3>₹85000</h3>
+                        <p class="per_person">Per Person</p>
+                        <div class="btn_section_last">
+                           <button class="btn1_details">View Details</button>
+                           <button class="btn1_price">Hotal View</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="inner_right">
+                  <div class="images_section">
+                     <div class="img_sec slider-container" id="slider3">
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">1 / 3</div>
+                           <img src="images/slide1.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">2 / 3</div>
+                           <img src="images/slide2.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">3 / 3</div>
+                           <img src="images/slide3.jpg" style="width:100%">
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                     </div>
+                     <div class="hotal_section">
+                        <div>
+                           <div class="hotal-star">
+                              <h6>Hotal</h6>
+                              <div class="star-rating">
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                              </div>
+                           </div>
+                           <div class="hotal_text">
+                              <h4>Bhuwana ubud hotal and faming </h4>
+                              <p>kekantanam ubud bali, indonasia</p>
+                              <div class="review_section">
+                                 <div class="review">
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                 </div>
+                                 <p>530 Reviews</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="hotal_bottom">
+                           <p><i class="fa-solid fa-fire"></i> Hurry Up! only few room are left</p>
+                           <div class="date">
+                              <div class="inner_date">
+                                 <input type="date" class="datetime">
+                                 <h6>(4 Nights)</h6>
+                              </div>
+                              <select name="" id="">
+                                 <option value="volvo" selected><i class="fa-solid fa-plane-departure"></i>4 flight Included</option>
+                                 <option value="1">4 flight Included</option>
+                                 <option value="2">4 flight Included</option>
+                                 <option value="3">4 flight Included</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text_section">
+                     <p class="free_off">20% Off</p>
+                     <h6>₹95000</h6>
+                     <h3>₹85000</h3>
+                     <p class="per_person">Per Person</p>
+                     <div class="btn_section_last">
+                        <button class="btn1_details">View Details</button>
+                        <button class="btn1_price">Hotal View</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="inner_right">
+                  <div class="images_section">
+                     <div class="img_sec slider-container" id="slider4">
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">1 / 3</div>
+                           <img src="images/slide1.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">2 / 3</div>
+                           <img src="images/slide2.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">3 / 3</div>
+                           <img src="images/slide3.jpg" style="width:100%">
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                     </div>
+                     <div class="hotal_section">
+                        <div>
+                           <div class="hotal-star">
+                              <h6>Hotal</h6>
+                              <div class="star-rating">
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                              </div>
+                           </div>
+                           <div class="hotal_text">
+                              <h4>Bhuwana ubud hotal and faming </h4>
+                              <p>kekantanam ubud bali, indonasia</p>
+                              <div class="review_section">
+                                 <div class="review">
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                 </div>
+                                 <p>530 Reviews</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="hotal_bottom">
+                           <p><i class="fa-solid fa-fire"></i> Hurry Up! only few room are left</p>
+                           <div class="date">
+                              <div class="inner_date">
+                                 <input type="date" class="datetime">
+                                 <h6>(4 Nights)</h6>
+                              </div>
+                              <select name="" id="">
+                                 <option value="volvo" selected><i class="fa-solid fa-plane-departure"></i>4 flight Included</option>
+                                 <option value="1">4 flight Included</option>
+                                 <option value="2">4 flight Included</option>
+                                 <option value="3">4 flight Included</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text_section">
+                     <p class="free_off">20% Off</p>
+                     <h6>₹95000</h6>
+                     <h3>₹85000</h3>
+                     <p class="per_person">Per Person</p>
+                     <div class="btn_section_last">
+                        <button class="btn1_details">View Details</button>
+                        <button class="btn1_price">Hotal View</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="inner_right">
+                  <div class="images_section">
+                     <div class="img_sec slider-container" id="slider5">
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">1 / 3</div>
+                           <img src="images/slide1.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">2 / 3</div>
+                           <img src="images/slide2.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">3 / 3</div>
+                           <img src="images/slide3.jpg" style="width:100%">
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                     </div>
+                     <div class="hotal_section">
+                        <div>
+                           <div class="hotal-star">
+                              <h6>Hotal</h6>
+                              <div class="star-rating">
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                              </div>
+                           </div>
+                           <div class="hotal_text">
+                              <h4>Bhuwana ubud hotal and faming </h4>
+                              <p>kekantanam ubud bali, indonasia</p>
+                              <div class="review_section">
+                                 <div class="review">
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                 </div>
+                                 <p>530 Reviews</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="hotal_bottom">
+                           <p><i class="fa-solid fa-fire"></i> Hurry Up! only few room are left</p>
+                           <div class="date">
+                              <div class="inner_date">
+                                 <input type="date" class="datetime">
+                                 <h6>(4 Nights)</h6>
+                              </div>
+                              <select name="" id="">
+                                 <option value="volvo" selected><i class="fa-solid fa-plane-departure"></i>4 flight Included</option>
+                                 <option value="1">4 flight Included</option>
+                                 <option value="2">4 flight Included</option>
+                                 <option value="3">4 flight Included</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text_section">
+                     <p class="free_off">20% Off</p>
+                     <h6>₹95000</h6>
+                     <h3>₹85000</h3>
+                     <p class="per_person">Per Person</p>
+                     <div class="btn_section_last">
+                        <button class="btn1_details">View Details</button>
+                        <button class="btn1_price">Hotal View</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="inner_right">
+                  <div class="images_section">
+                     <div class="img_sec slider-container" id="slider6">
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">1 / 3</div>
+                           <img src="images/slide1.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">2 / 3</div>
+                           <img src="images/slide2.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">3 / 3</div>
+                           <img src="images/slide3.jpg" style="width:100%">
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                     </div>
+                     <div class="hotal_section">
+                        <div>
+                           <div class="hotal-star">
+                              <h6>Hotal</h6>
+                              <div class="star-rating">
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                              </div>
+                           </div>
+                           <div class="hotal_text">
+                              <h4>Bhuwana ubud hotal and faming </h4>
+                              <p>kekantanam ubud bali, indonasia</p>
+                              <div class="review_section">
+                                 <div class="review">
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                 </div>
+                                 <p>530 Reviews</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="hotal_bottom">
+                           <p><i class="fa-solid fa-fire"></i> Hurry Up! only few room are left</p>
+                           <div class="date">
+                              <div class="inner_date">
+                                 <input type="date" class="datetime">
+                                 <h6>(4 Nights)</h6>
+                              </div>
+                              <select name="" id="">
+                                 <option value="volvo" selected><i class="fa-solid fa-plane-departure"></i>4 flight Included</option>
+                                 <option value="1">4 flight Included</option>
+                                 <option value="2">4 flight Included</option>
+                                 <option value="3">4 flight Included</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text_section">
+                     <p class="free_off">20% Off</p>
+                     <h6>₹95000</h6>
+                     <h3>₹85000</h3>
+                     <p class="per_person">Per Person</p>
+                     <div class="btn_section_last">
+                        <button class="btn1_details">View Details</button>
+                        <button class="btn1_price">Hotal View</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="inner_right">
+                  <div class="images_section">
+                     <div class="img_sec slider-container" id="slider7">
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">1 / 3</div>
+                           <img src="images/slide1.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">2 / 3</div>
+                           <img src="images/slide2.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">3 / 3</div>
+                           <img src="images/slide3.jpg" style="width:100%">
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                     </div>
+                     <div class="hotal_section">
+                        <div>
+                           <div class="hotal-star">
+                              <h6>Hotal</h6>
+                              <div class="star-rating">
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                              </div>
+                           </div>
+                           <div class="hotal_text">
+                              <h4>Bhuwana ubud hotal and faming </h4>
+                              <p>kekantanam ubud bali, indonasia</p>
+                              <div class="review_section">
+                                 <div class="review">
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                 </div>
+                                 <p>530 Reviews</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="hotal_bottom">
+                           <p><i class="fa-solid fa-fire"></i> Hurry Up! only few room are left</p>
+                           <div class="date">
+                              <div class="inner_date">
+                                 <input type="date" class="datetime">
+                                 <h6>(4 Nights)</h6>
+                              </div>
+                              <select name="" id="">
+                                 <option value="volvo" selected><i class="fa-solid fa-plane-departure"></i>4 flight Included</option>
+                                 <option value="1">4 flight Included</option>
+                                 <option value="2">4 flight Included</option>
+                                 <option value="3">4 flight Included</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text_section">
+                     <p class="free_off">20% Off</p>
+                     <h6>₹95000</h6>
+                     <h3>₹85000</h3>
+                     <p class="per_person">Per Person</p>
+                     <div class="btn_section_last">
+                        <button class="btn1_details">View Details</button>
+                        <button class="btn1_price">Hotal View</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="login_section">
+                  <div class="login_inner">
+                     <div class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                     </div>
+                     <div>
+                        <h3>Sign into get amazing discound</h3>
+                        <p>unlock the deal by siging it</p>
+                     </div>
+                  </div>
+                  <a href="#">Login Now  <i class="fa-solid fa-chevron-right"></i></a>
+               </div>
+               <div class="inner_right">
+                  <div class="images_section">
+                     <div class="img_sec slider-container" id="slider8">
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">1 / 3</div>
+                           <img src="images/slide1.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">2 / 3</div>
+                           <img src="images/slide2.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">3 / 3</div>
+                           <img src="images/slide3.jpg" style="width:100%">
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                     </div>
+                     <div class="hotal_section">
+                        <div>
+                           <div class="hotal-star">
+                              <h6>Hotal</h6>
+                              <div class="star-rating">
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                              </div>
+                           </div>
+                           <div class="hotal_text">
+                              <h4>Bhuwana ubud hotal and faming </h4>
+                              <p>kekantanam ubud bali, indonasia</p>
+                              <div class="review_section">
+                                 <div class="review">
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                 </div>
+                                 <p>530 Reviews</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="hotal_bottom">
+                           <p><i class="fa-solid fa-fire"></i> Hurry Up! only few room are left</p>
+                           <div class="date">
+                              <div class="inner_date">
+                                 <input type="date" class="datetime">
+                                 <h6>(4 Nights)</h6>
+                              </div>
+                              <select name="" id="">
+                                 <option value="volvo" selected><i class="fa-solid fa-plane-departure"></i>4 flight Included</option>
+                                 <option value="1">4 flight Included</option>
+                                 <option value="2">4 flight Included</option>
+                                 <option value="3">4 flight Included</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text_section">
+                     <p class="free_off">20% Off</p>
+                     <h6>₹95000</h6>
+                     <h3>₹85000</h3>
+                     <p class="per_person">Per Person</p>
+                     <div class="btn_section_last">
+                        <button class="btn1_details">View Details</button>
+                        <button class="btn1_price">Hotal View</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="inner_right">
+                  <div class="images_section">
+                     <div class="img_sec slider-container" id="slider9">
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">1 / 3</div>
+                           <img src="images/slide1.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">2 / 3</div>
+                           <img src="images/slide2.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">3 / 3</div>
+                           <img src="images/slide3.jpg" style="width:100%">
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                     </div>
+                     <div class="hotal_section">
+                        <div>
+                           <div class="hotal-star">
+                              <h6>Hotal</h6>
+                              <div class="star-rating">
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                              </div>
+                           </div>
+                           <div class="hotal_text">
+                              <h4>Bhuwana ubud hotal and faming </h4>
+                              <p>kekantanam ubud bali, indonasia</p>
+                              <div class="review_section">
+                                 <div class="review">
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                 </div>
+                                 <p>530 Reviews</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="hotal_bottom">
+                           <p><i class="fa-solid fa-fire"></i> Hurry Up! only few room are left</p>
+                           <div class="date">
+                              <div class="inner_date">
+                                 <input type="date" class="datetime">
+                                 <h6>(4 Nights)</h6>
+                              </div>
+                              <select name="" id="">
+                                 <option value="volvo" selected><i class="fa-solid fa-plane-departure"></i>4 flight Included</option>
+                                 <option value="1">4 flight Included</option>
+                                 <option value="2">4 flight Included</option>
+                                 <option value="3">4 flight Included</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text_section">
+                     <p class="free_off">20% Off</p>
+                     <h6>₹95000</h6>
+                     <h3>₹85000</h3>
+                     <p class="per_person">Per Person</p>
+                     <div class="btn_section_last">
+                        <button class="btn1_details">View Details</button>
+                        <button class="btn1_price">Hotal View</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="inner_right">
+                  <div class="images_section">
+                     <div class="img_sec slider-container" id="slider10">
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">1 / 3</div>
+                           <img src="images/slide1.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">2 / 3</div>
+                           <img src="images/slide2.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides2 fade">
+                           <div class="numbertext">3 / 3</div>
+                           <img src="images/slide3.jpg" style="width:100%">
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                     </div>
+                     <div class="hotal_section">
+                        <div>
+                           <div class="hotal-star">
+                              <h6>Hotal</h6>
+                              <div class="star-rating">
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                                 <i class="fa-solid fa-star text-gold"></i>
+                              </div>
+                           </div>
+                           <div class="hotal_text">
+                              <h4>Bhuwana ubud hotal and faming </h4>
+                              <p>kekantanam ubud bali, indonasia</p>
+                              <div class="review_section">
+                                 <div class="review">
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                 </div>
+                                 <p>530 Reviews</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="hotal_bottom">
+                           <p><i class="fa-solid fa-fire"></i> Hurry Up! only few room are left</p>
+                           <div class="date">
+                              <div class="inner_date">
+                                 <input type="date" class="datetime">
+                                 <h6>(4 Nights)</h6>
+                              </div>
+                              <select name="" id="">
+                                 <option value="volvo" selected><i class="fa-solid fa-plane-departure"></i>4 flight Included</option>
+                                 <option value="1">4 flight Included</option>
+                                 <option value="2">4 flight Included</option>
+                                 <option value="3">4 flight Included</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text_section">
+                     <p class="free_off">20% Off</p>
+                     <h6>₹95000</h6>
+                     <h3>₹85000</h3>
+                     <p class="per_person">Per Person</p>
+                     <div class="btn_section_last">
+                        <button class="btn1_details">View Details</button>
+                        <button class="btn1_price">Hotal View</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <script>
+         // Array of slider container IDs
+         const sliderContainerIds = ['slider1', 'slider2','slider3','slider4','slider5','slider6','slider7','slider8','slider9','slider10'];
+         
+         // Iterate through each slider container
+         sliderContainerIds.forEach(containerId => {
+           const container = document.getElementById(containerId);
+           const slides = container.getElementsByClassName('fade');
+           let slideIndex = 0;
+           showSlides(slideIndex, containerId);
+         
+           const prevButton = container.querySelector('.prev');
+           const nextButton = container.querySelector('.next');
+         
+           prevButton.addEventListener('click', () => plusSlides(-1, containerId));
+           nextButton.addEventListener('click', () => plusSlides(1, containerId));
+         
+           function plusSlides(n, containerId) {
+             showSlides((slideIndex += n), containerId);
+           }
+         
+           function showSlides(n, containerId) {
+             let i;
+             const currentSlides = document.getElementById(containerId).getElementsByClassName('fade');
+             if (n >= currentSlides.length) slideIndex = 0;
+             if (n < 0) slideIndex = currentSlides.length - 1;
+             for (i = 0; i < currentSlides.length; i++) {
+               currentSlides[i].style.display = 'none';
+             }
+             currentSlides[slideIndex].style.display = 'block';
+           }
+         });
+         
+      </script>
+   </body>
+</html>
