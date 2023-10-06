@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    body{
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background-color: aqua;
+    }
+   .card{
+    width: 300px;
+    position: relative;
+   }
+   .card  img{width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;}
+   .card .text{width: 100%; height: 100%; position: absolute; top: 0%; left: 0%;
+    
+}
+   .card  .text::before,
+   .card  .text::after{content: ''; width: 95%; background-color: blueviolet; height: 47%;
+   position: absolute; right:0; left: 0; margin: auto; opacity: 0; transition: all .5s ease-in-out;}
+   .card  .text::before{
+    top: -20%;
+   }
+   .card  .text::after{
+    bottom: -20%;
+   }
+   .card:hover .text::before{
+    top: 3%;
+    opacity: .8;
+   }
+   .card:hover  .text::after{
+    bottom: 3%;
+    opacity: .8;
+   }
+   .content{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    opacity: 0;
+
+    transition: all .4s;
+   }
+   .card:hover .content{opacity: 1;}
+   .content h5{font-size: 25px; font-weight: 700; text-align: center;}
+   .content h5,p{color: white; font-size: 16px; text-align: center;}
+</style>
+<body>
+    <div class="container">
+     <div class="card">    
+            <img src="srk6.webp" alt="">       
+        <div class="text">
+           <div class="content">
+            <h5>shah rukh </h5>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                 adipisicing elit. Eum, facilis.</p>
+           </div>
+
+        </div>
+     </div>
+    </div>
+</body>
+</html>

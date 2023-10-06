@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{min-height: 100vh;display: grid;place-items: center;background-color: blue;}
+    .text-fist{color: white; text-transform: capitalize; font-size: 30px; font-weight: 700;}
+    .text-fist .sec{color: red;text-transform: capitalize; font-weight: 800;position: relative;}
+     .sec::after{content: ''; background-color: blue; height: 100%; width: 100%;position: absolute;
+    top: 0%; left: 0%; border-left: 2px solid red; animation: textani 6s steps(12)  infinite;}
+    @keyframes textani{
+        40%,60%{
+            left: 100%;
+        }
+        100%{
+            left: 0%;
+        }
+    }
+</style>
+<body>
+ <div class="text-fist">
+    my name is 
+    <span class="sec">Shah Alam</span>
+ </div>   
+</body>
+</html>

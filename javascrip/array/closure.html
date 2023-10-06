@@ -1,0 +1,23 @@
+<html>
+    <head>
+<title>helloo</title>
+    </head>
+    <body>
+        <p id="demo">0</p>
+        <button onclick="myFun()">click</button>
+    </body>
+    <script>
+     const add = (function () {
+  let counter = 0;
+  return function ()  {
+    counter += 1;
+     return counter;
+}
+})();
+       
+        function myFun(){
+            document.getElementById("demo").innerHTML =  add();
+        }
+        
+    </script>
+</html>

@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>hello</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+  </body>
+  <script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    const num = [10, 30, 40, 60, 20, 5];
+    // fruits.sort();
+    // fruits.reverse();
+    // accending order
+    // num.sort();
+    // num.sort(function(a,b){return a-b});
+    // decending order
+    // num.sort(function(a,b){return b-a})
+    // find lowset and heest value
+    // num.sort(function(a,b){return a-b})
+    // num[0];  //min
+    // num[num.length-1]  //max
+    // map method
+    // const num2 = num.map(myFun);
+    // document.getElementById("demo").innerHTML = num2;
+    // function myFun(value) {
+    //   return value * 2;
+
+    //}
+    // filter 
+      const filternum = num.filter(myFun)
+      document.getElementById("demo").innerHTML = filternum
+      function myFun(value){
+    return       value>10
+      }
+//   reduce method
+// const rednum = num.reduce(myFun);
+
+// document.getElementById("demo").innerHTML = rednum;
+// function myFun(total,value){
+//     console.log(total);
+// return total+value;
+// }
+
+// every method
+
+// const eveynum= num.every(myFun);
+
+// document.getElementById("demo").innerHTML = eveynum;
+// function myFun(value){
+// console.log(value);
+// return value>3
+// }
+
+  </script>
+</html>

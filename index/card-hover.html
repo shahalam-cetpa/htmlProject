@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        /* display: grid;
+        place-items: center; */
+        background-color: #1b1b67;
+        position: relative;
+    }
+    .card {
+        width: 350px;
+    
+   
+        box-shadow: 0 3px 0 rgba(red, green, blue, .4);
+    }
+  
+    .card img{width: 100%;object-fit:cover ; aspect-ratio: 1/1; display: block;  border-radius: 4px; z-index: 1; position:relative;
+   right: 0; left: 0; margin: auto;}
+     .content_box{width: 350px;  background-color: blueviolet; opacity: .6; padding: 40px; display: block;;
+    transform: translateY(-90%); z-index: -1; border-radius: 4px; transition: all .5s; }
+     p{
+        font-size: 16px;color: white; text-align: center;
+     }
+     /* .card:hover .content_box{
+    transform: translateY(0%);
+     } */
+     .main{
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+     }
+     .main:hover .content_box{
+        transform: translateY(-20%);
+     }
+     h3{font-size: 25px; font-weight: 700; color: white; text-align: center;}
+</style>
+<div class="main">   
+        <div class="card">
+            <img src="srk4.jpg" alt="">
+        </div>
+            <div class="content_box">
+                <div class="content">
+                    <h3>Shah rukh khan</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Unde a sapiente vitae aliquid delectus autem corporis? Cupiditate
+                          delectus et ducimus asperiores nisi perferendis, provident reiciendis eius. 
+                          Ullam praesentium ipsa ab ipsam 
+                        eum mollitia optio, expedita sit? Quia impedit obcaecati voluptates.</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
