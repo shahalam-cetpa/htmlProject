@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Tab</title>
+</head>
+<style>
+    .container{
+       max-width: 800px;
+        margin: 5px auto;
+        background-color: aqua;
+        padding: 30px;
+        position: relative;
+        overflow-x: hidden;
+        height: 400px;
+
+    }
+    .first_tab_section ul{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    } 
+    .first_tab_section ul li button{
+      width: 120px;  
+      height: 35px;
+    background-color: black;
+      border: 1px solid #fff;
+      cursor: pointer;
+      color: #fff;
+    }
+    .first_tab_section ul li{
+        list-style: none;
+     
+    }
+    .first_tab_section ul li.active button{
+        background-color: red;
+        color: yellow;
+        border: 2px solid #fff;
+    }
+    .tab-body{
+        transform: translateX(-110%);
+        /* opacity: 0; */
+        position: absolute;
+       
+    }
+    .tab-body.active{
+        transform: translateX(0%);
+        opacity: 1;
+        transition: all .3s ease-in-out;
+    }
+</style>
+<body>
+   <div class="container">
+    <div class="tab">
+        <div class="first_tab_section">
+           <ul>
+            <li class="tab-pane active" data-id="content1">
+                <button >Home</button>
+            </li>
+            <li class="tab-pane" data-id="content2">
+                <button>About</button>
+            </li>
+            <li class="tab-pane" data-id="content3">
+                <button>Blog</button>
+            </li>
+            <li class="tab-pane" data-id="content4">
+                <button>Contact</button>
+            </li>
+           </ul>
+        </div>
+        <div class="content_section">
+          <div class="tab-body active" id="content1">
+             <h1>Home</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa nam
+                 inventore exercitationem quas fugiat ipsam nisi cum,</p>
+          </div>
+          <div class="tab-body"  id="content2">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa nam
+                inventore exercitationem quas fugiat ipsam nisi cum, magni provident!</p>
+         </div>
+         <div class="tab-body"  id="content3">
+            <h1>Blog</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa nam
+                inventore exercitationem quas fugiat ipsam nisi cum, magni provident!</p>
+         </div>
+         <div class="tab-body"  id="content4">
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa nam
+                inventore exercitationem quas fugiat ipsam nisi cum, magni provident!</p>
+         </div>
+        </div>
+    </div>
+   </div> 
+
+   <script>
+    var tabs = document.querySelectorAll(".tab-pane");
+    var tabBodies = document.querySelectorAll(".tab-body");
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            tabs.forEach(tabItem => tabItem.classList.remove("active"));
+            tabBodies.forEach(body => body.classList.remove("active"));
+
+            tab.classList.add("active");
+            const contentId = tab.getAttribute("data-id");
+            document.getElementById(contentId).classList.add("active");
+        });
+    });
+</script>
+
+</body>
+</html>

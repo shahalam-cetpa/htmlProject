@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+
+ 
+
+
+</head>
+<style>
+    #btn{
+        width: 120px;
+        height: 35px;
+        color: white;
+        background: blue;
+        border: 1px solid red;cursor: pointer;
+    }
+</style>
+<body>
+    json is stand for javascript object notation
+    json is language independent
+    json is used to send data between computers
+
+    json is used to create a javascript object
+
+    json string to json object
+    JSON.parse();
+    
+    json object into json string
+
+    JSON.stringfy();
+
+    json {"name":"shah alam"};
+    javsscript {name:"shah alam"};
+    json object
+      {
+        "employee":{"name":"John", "age":30, "city":"New York"}
+        }
+        <button id="btn">click me</button>
+    <script>
+    //     person = {name:"John", age:31, city:"New York"};
+    //    const val= person.name;
+    //    console.log(val);
+  const val =  '{"name":"John", "age":30, "city":"New York"}'
+  const result =JSON.parse(val);
+  console.log(result);
+
+  const btn = document.querySelector("#btn");
+  btn.addEventListener("click",()=>{
+    btn.innerHTML="Clicked";
+    btn.style.backgroundColor="red";
+  })
+    </script>
+</body>
+</html>

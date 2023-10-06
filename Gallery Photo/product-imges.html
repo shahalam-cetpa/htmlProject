@@ -28,21 +28,15 @@
         var mainimg = document.querySelector(".main-imges img");
         var smallimg = document.querySelectorAll(".small-images img");
         // first law
-    //    for(let i=0; i<=smallimg.length;i++){
-    //     smallimg[i].addEventListener("click",()=>{
-    //         mainimg.src= smallimg[i].src 
-    //     })
-    //    }
+       for(let i=0; i<=smallimg.length;i++){
+        smallimg[i].addEventListener("click",()=>{
+            mainimg.src= smallimg[i].src 
+        })
+       }
     //    second law
         // smallimg.forEach(img=>img.addEventListener("click",()=>{
         //     mainimg.src=img.src
         // }))
-
-        smallimg.forEach(img=>{
-            img.addEventListener("click",()=>{
-                mainimg.src=img.src  
-            })
-        })
 
          
     </script>

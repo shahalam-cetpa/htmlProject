@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+        const arr = [0,9,0,7,8,9,9,5,5,5,9,4,6,8];
+        const newarr = Array.from(new Set(arr));
+        console.log(newarr);
+
+        const unique = arr.filter((item,index)=>{
+            return arr.indexOf(item)===index;
+        })
+        console.log(unique);
+
+        const evenno = arr.filter((item)=>{
+            
+          return  item%2===1
+        });
+        console.log(evenno);
+
+        const forer = arr.map((item)=>{
+            return item*2
+        })
+        console.log(forer);  
+        
+        var alam = "hello"
+
+        const opp = alam.split('').reverse().join('');
+
+        console.log(opp)
+
+        const max = Math.min(...arr);
+        const min = Math.max(...arr);
+        console.log(max);
+        console.log(min);
+
+        const arr1 = [2, 5, 6, 8, 6, 7, 9, 0, 0, 5, 9, 9, 20, 78];
+
+// Find the index of 7 in the array
+const kr = arr1.indexOf(7);
+console.log(kr);
+ const arr2 = arr1.slice(kr+1);
+ console.log(arr2);
+
+</script>
+
+</body>
+</html>

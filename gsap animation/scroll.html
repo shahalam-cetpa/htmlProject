@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,10 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+
+
     }
+
     body {
         font-family: 'Bitter', serif;
         font-family: 'Lato', sans-serif;
@@ -23,26 +27,30 @@
         height: 100%;
         width: 100%;
     }
+
     .page1 {
         width: 100%;
         height: 100vh;
         background-color: black;
         padding: 20px;
         overflow: hidden;
+
+
     }
+
     .page2 {
         width: 100%;
         height: 100vh;
         background-color: black;
         padding: 0px;
-        /* overflow: hidden; */        
+        overflow: hidden;
+        
     }
 
     .page3 {
         width: 100%;
         height: 100vh;
         background-color: rgb(78, 53, 53);
-        overflow-y: hidden;
     }
 
     .page1 h1 {
@@ -102,39 +110,11 @@
     .box1 p{
         text-align: center;
     }
-    .page3{
-        background-color: red;
-        height: 100vh;
-        width: 100%;
-    }
-    .circle{
-        border: 15px solid white;
-        border-radius: 50%;
-        width: 150px;
-         height: 150px;
-         position: relative;
-          border-top: 15px solid red;
-          animation: anime .7s linear infinite;
-    }
-    @keyframes anime{
-        0%{
-            transform: rotate(0deg);
-        }
-        100%{
-            transform: rotate(360deg);
-        }
-    }
-   
 </style>
 
 <body>
     <div class="loader">
-        <!-- <p>0</p> -->
-
-        <div class="circle">
-
-        </div>
-
+        <p>0</p>
     </div>
     <div class="main">
         <div class="page1">
@@ -270,9 +250,11 @@
     </script>
      <script>
         gsap.to(".page2 .box1", {
-            transform: "translateY(-110vh)",          
+            transform: "translateY(-100vh)",
+          
             color: "red",
             fontWeight:"700",
+
             scrollTrigger: {
                 trigger: ".page2",
                 scroller: "body",
@@ -305,8 +287,8 @@
         }
         tl.to(".loader p", {
             delay: .5,
-            duration: 3,
-            // onStart: time()
+            duration: 4,
+            onStart: time()
         })
 
         tl.to(".loader", {
