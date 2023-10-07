@@ -42,5 +42,31 @@
 
     </div>
   </div>
+  <script>
+    const cities = [
+  { name: 'New York', country: 'USA' },
+  { name: 'Los Angeles', country: 'USA' },
+  { name: 'New York', country: 'USA' },
+  { name: 'London', country: 'UK' },
+  { name: 'Paris', country: 'France' },
+  { name: 'London', country: 'UK' }
+];
+
+function filterUniqueCities(city, index, self) {
+  console.log(self);
+console.log(index)
+console.log(city);
+  return (
+    index ===
+    self.findIndex((c) => c.name === city.name && c.country === city.country)
+  );
+  
+}
+
+const uniqueCities = cities.filter(filterUniqueCities);
+
+console.log(uniqueCities);
+
+  </script>
 </body>
 </html>
